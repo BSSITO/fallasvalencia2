@@ -1,6 +1,6 @@
 <?php
 
-include_once ("Modelo.php");
+include_once ("Falla.php");
 
 /* *******************************************************************************************
  
@@ -8,7 +8,7 @@ include_once ("Modelo.php");
 
  * ***************************************************************************************** */
 
-class Usuario extends Modelo  {
+class Usuario extends Falla  {
 
 	private $id;
 	private $login;
