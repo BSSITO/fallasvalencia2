@@ -7,7 +7,7 @@
  * CLASE Caracteristica
 
  * ***************************************************************************************** */
-class Falla {
+class Modelo {
 
 	// parámetros de conexión
 	private $dbname = "fallas_valencia";
@@ -54,25 +54,6 @@ class Falla {
 		$this->limitar = $booLimitar;
 	}
 
-	
-
-	public function getFallas() {
-
-		// creo el array de fallas
-		$arrFallas = [];
-	
-		// creamos la consulta
-		$sql = "select id_falla, nombre, fecha_fundacion, presupuesto  from fallas";
-	
-		// ejecutamos la consulta
-		$consulta = $this->conn->query($sql);
-	
-		while($registro = $consulta->fetch()){
-			$arrFallas[] = $registro;
-		}
-	
-		return $arrFallas;
-	}
 		
 }
 

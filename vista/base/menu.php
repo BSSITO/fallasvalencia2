@@ -85,7 +85,7 @@ MENU PRINCIPAL
         <li class="nav-item">
             <a 
                 class="nav-link itemMenu <?php echo $arrItemsActivos['actualizar']; ?>" 
-                href="/fallasvalencia/actualizar/">Actualizar</a></li>
+                href="actualizar.php">Actualizar</a></li>
         
         <li class="nav-item">
             <a 
