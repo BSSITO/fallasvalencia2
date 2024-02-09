@@ -1,6 +1,6 @@
 
 <?php
-include ("modelo/Falla.php");
+include ("controlador/ControladorFallas.php");
 
 $falla = new Falla();
 
@@ -38,7 +38,7 @@ require 'base/menu.php';
       <td><?php echo $registro['fecha_fundacion'] ?></td>
       <td><?php echo $registro['presupuesto'] ?></td>
       <td>
-        <a name="" id="" class="btn btn-info" href="VistaActualizarFalla.php?txtID=<?php echo $registro['id_falla']?>" role='button'>Editar</a>
+        <a name="" id="" class="btn btn-info" href="vista/VistaActualizarFalla.php?txtID=<?php echo $registro['id_falla']?>" role='button'>Editar</a>
       </td>
     </tr><?php } ?>
   </tbody>
